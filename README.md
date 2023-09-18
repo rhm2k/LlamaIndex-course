@@ -28,3 +28,25 @@ Contributions to this course are welcome! If you have suggestions for improvemen
 ### Also check
 
 [Langchain Course](https://github.com/SamurAIGPT/langchain-course)
+
+### Notes (RHM) 2023-09-18 
+- decided to try it using Colab (as it was designed)
+
+### Notes (RHM) 2023-08-30 
+1. created conda env to run locally: llamaindex
+2. installed python = 3.11
+3. installed llama_index `pip install llama_index`
+4. installed ipykernel in order to create an associated kernel `conda install ipykernel`
+5. created ipykernel with display name: "Llamaindex"
+6. after failure, installed nltk `conda install nltk`
+
+In Introduction:
+1. Did not recognize `wget`. Used curl to download the SOTU file
+
+```
+#!wget https://raw.githubusercontent.com/hwchase17/chat-your-data/master/state_of_the_union.txt
+!curl -o state_of_the_union.txt https://raw.githubusercontent.com/hwchase17/chat-your-data/master/state_of_the_union.txt
+```
+
+In Fundamentals:
+1. keep getting error re use of SimpleNodeParser(text_splitter) which SHOULD be 'none', but is not accepted.
